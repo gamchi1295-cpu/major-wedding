@@ -320,7 +320,7 @@ footer .f-box .link li a{
   }
   
 }
-@media (max-width : 360px){
+@media (max-width : 450px){
   footer .f-top li{
     height: 80px;
     line-height: 80px;
