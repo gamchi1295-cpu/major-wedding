@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+:root{
+  --main-font: "Ridibatang" , sans-serif;
+  --sub-font: "Playwrite NO", cursive;
+  --sub-font2: 'YesMyungjo';
+  --main-color : #FFA8B4;
+  --sub-color: #FFDBE0;
+  --font-color: #7E3B3E;
+  --sub2-color : #FFF0E2;
+  --font2-color : #997738;
+}
+
+/* 공통 */
+body{
+  font-family: var(--main-font); 
+  font-size: 1.8rem; 
+  line-height: 1.5; 
+  color: #333;
+  overflow-x: hidden;
+}
+#wrap{
+  min-width: 320px;
+}
+.inner{
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding: 0 5%;
+}
+/* header */
+
+header{
+  width: 100%;
+}
+header .inner{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 14px 0;
+}
+header h1 a{
+  display: block;
+  width: 157px;
+  height: 50px;
+  background: url(../image/logo.png)no-repeat 0 / 100%;
+  font-size: 0;
+  color: transparent;
+}
+header nav{
+  margin: 0 auto 0 100px;
+}
+header nav .gnb{
+  display: flex;
+  gap: 60px;
+}
+header nav .gnb > li{
+  position: relative;
+}
+header nav .gnb > li > a{
+  display: block;
+  font-family: 'YesMyungjo';
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+header nav .gnb .depth2{
+  display: flex; 
+  position: absolute; 
+  width: 1200px;
+  z-index: 99;
+  gap: 15px;
+}
+header nav .gnb .depth2 li a{
+  display: block; 
+  padding: 40px 20px; 
+  color: #fff; 
+  transition: all 0.5s;
+  font-size: 1.6rem;
+}
+header nav .gnb .depth2 li:hover a{
+  color: var(--main-color);
+}
+header .depth2-bg{
+  position: absolute; 
+  left: 0; 
+  width: 100%; 
+  height: 60px; 
+  background-color: #51343A; 
+  z-index: 98;
+}
+header .utill{
+  display: flex; 
+  align-items: center; 
+  gap: 15px;
+}
+header .utill .btn-search{
+  width: 20px;
+  height: 20px;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  background: url(../image/search.png) no-repeat center;
+  cursor: pointer;
+}
+header .utill .btn-star{
+  width: 21px;
+  height: 21px;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  background: url(../image/star.png)no-repeat center;
+  cursor: pointer;
+}
+header .utill .btn-menu{
+  width: 50px;
+  height: 33px;
+  border: 0;
+  color: transparent;
+  font-size: 0;
+  background: url(../image/ham.png)no-repeat center;
+  cursor: pointer;
+  display: none;
+}
+header .dim{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.8); 
+  display: none;
+  z-index: 99;
+}
+/* mgnb */
+.mgnb-wrap{
+  position: fixed; 
+  top: 0; 
+  right: -100%; 
+  width: 80%; 
+  height: 100%; 
+  background-color: #eee; 
+  padding: 100px 50px; 
+  z-index: 999; 
+}
+.mgnb{
+  border-top: 1px solid #000; 
+  border-bottom: 1px solid #ccc; 
+  padding: 20px;
+}
+.mgnb li{
+  font-size: 3rem; 
+  padding: 10px 0;
+}
+.mgnb-close{
+  position: absolute; 
+  top: 50px; 
+  right: 50px; 
+  width: 30px; 
+  height: 30px; 
+  background: url(../image/ico_close.png) no-repeat center; 
+  color: transparent; 
+  font-size: 0; 
+  cursor: pointer;
+}
+
+@media (max-width : 1024px){
+  header nav .gnb{
+    display: none;
+  }
+  header .utill .btn-search,header .utill .btn-star{
+    display: none;
+  }
+  header .utill .btn-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  
+}
+@media (max-width : 584px){}
+@media (max-width : 360px){
+  
+  header .utill .btn-menu{
+    width: 35px;
+    height: 35px;
+  }
+  .mgnb li{
+    font-size: 2.5rem;
+  }
+
+}
+
+/* footer */
+footer .f-top{
+  display: flex;
+  justify-content: space-between;
+}
+footer .f-top li{
+  width: calc(100% / 2);
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  overflow: visible;
+}
+footer .f-top li a{
+  font-size: 3rem;
+  font-family: var(--sub-font2);
+  font-weight: 700;
+}
+footer .f-top .pink{
+  background-color: #FFCCD2;
+}
+footer .f-top .pink a{
+  color: var(--font-color);
+}
+footer .f-top .pink .dance{
+  background: url(../image/dance\ 1.svg)no-repeat center /cover;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  bottom: 20px;
+  left: 15%;
+}
+footer .f-top .yell{
+  background-color: #FFE5B5;
+}
+footer .f-top .yell .mini{
+  background: url(../image/bouquet\ 1.svg)no-repeat center /cover;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  bottom: 10px;
+  right: 15%;
+}
+footer .f-top .yell a{
+  color: var(--font2-color);
+}
+footer .f-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: #51343A;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 30px;
+}
+footer .f-box .f-logo img{
+  filter: invert();
+}
+footer .f-box .copy{
+  text-align: center;
+}
+footer .f-box .link{
+  display: flex;
+  gap: 0;
+}
+footer .f-box .link li{
+  position: relative;
+  padding: 0 10px;
+}
+footer .f-box .link li + li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255,255,255,0.8);
+}
+footer .f-box .link li a{
+  color: #fff;
+}
+@keyframes circle{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.go-top a{
+  display: block;
+  background: url(../image/consulting.png) no-repeat center / cover;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 300px;
+  right: 30px;
+  animation: circle 50s linear infinite;
+
+}
+@media (max-width : 1024px){}
+@media (max-width : 768px){
+  footer .f-top li a{
+    font-size: 2.4rem;
+  }
+  footer .f-top .pink .dance{
+    width: 80px;
+    height: 80px;
+    left: 0;
+    bottom: 40px;
+    
+  }
+  footer .f-top .yell .mini{
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 40px;
+  }
+  footer .f-box{
+    padding: 45px 23px;
+  }
+  footer .f-box .link{
+    display: none;
+  }
+  footer .f-box .copy{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 236px;
+  }
+  footer .f-box .copy .none{
+    display: none;
+  }
+  
+}
+@media (max-width : 360px){
+  footer .f-top li{
+    height: 80px;
+    line-height: 80px;
+  }
+  footer .f-top li a{
+    font-size: 1.6rem;
+  }
+  footer .f-top .pink .dance{
+    width: 46px;
+    height: 46px;
+    left: 0;
+    bottom: 57px;
+    
+  }
+  footer .f-top .yell .mini{
+    width: 46px;
+    height: 46px;
+    right: 0;
+    bottom: 57px;
+  }
+  footer .f-box{
+    padding: 24px 63px;
+  }
+  footer .f-box .f-logo{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

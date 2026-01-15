@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding_hall</title>
+
+  <!--font-->
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!--css-->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+  <!--js-->
+  <script defer src="../js/jquery-3.7.1.min.js"></script>
+  <script defer src="../js/swiper-bundle.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+
+        <h1><a href="#">로고</a></h1>
+
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">메이저 웨딩</a>
+              <ul class="depth2">
+                <li><a href="#">ABOUT MAJOR</a></li>
+                <li><a href="#">플래닝 서비스</a></li>
+                <li><a href="#">일정안내</a></li>
+                <li><a href="#">위치</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">웨딩홀</a>
+              <ul class="depth2">
+                <li><a href="#">웨딩홀 찾기</a></li>
+                <li><a href="#">웨딩홀 무료섭외</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">가이드</a>
+              <ul class="depth2">
+                <li><a href="#">결혼준비 과정</a></li>
+                <li><a href="#">결혼준비 D-100</a></li>
+                <li><a href="#">결혼준비 분담표</a></li>
+                <li><a href="#">결혼준비 예산수립</a></li>
+                <li><a href="#">기타 웨딩가이드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">갤러리</a>
+              <ul class="depth2">
+                <li><a href="#">스튜디오</a></li>
+                <li><a href="#">드레스</a></li>
+                <li><a href="#">헤어 & 메이크업</a></li>
+                <li><a href="#">허니문</a></li>
+                <li><a href="#">혼수</a></li>
+                <li><a href="#">The other</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">플래닝</a>
+              <ul class="depth2">
+                <li><a href="#">웨딩 플래닝</a></li>
+                <li><a href="#">웨딩 Q&A</a></li>
+                <li><a href="#">웨딩 컨설팅 신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul class="depth2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">웨딩정보</a></li>
+                <li><a href="#">고객의 소리</a></li>
+              </ul>
+            </li>
+          </ul><!--.gnb-->
+
+          <div class="dim"></div><!--.dim-->
+
+          <div class="mgnb-wrap">
+            <ul class="mgnb">
+              <li><a href="#">메이저웨딩</a></li>
+              <li><a href="#">웨딩홀</a></li>
+              <li><a href="#">가이드</a></li>
+              <li><a href="#">갤러리</a></li>
+              <li><a href="#">플래닝</a></li>
+              <li><a href="#">커뮤니티</a></li>
+            </ul>
+            <button type="button" class="mgnb-close">메뉴닫기</button>
+          </div><!--.mgnb-wrap-->
+
+        </nav>
+
+        <div class="utill">
+          <button type="button" class="btn-search">검색</button>
+          <button type="button" class="btn-star">즐겨찾기</button>
+          <button type="button" class="btn-menu">메뉴열기</button>
+        </div>
+
+        
+
+      </div><!--.inner-->
+
+      <div class="depth2-bg"></div><!--.depth2-bg-->
+    
+    </header>
+
+    <div id="container">
+      <div class="sub-visual bg-wedding">
+        <div class="inner">
+          <div class="vis-box">
+            <h3>웨딩홀 찾기</h3>
+            <p>특별한 순간을 위한 특별한 장소</p>
+          </div>
+        </div><!--inner-->
+      </div>
+      <div id="wedding">
+        <div class="inner">
+          <h2>WEDDING HALL</h2>
+
+          <div class="tab-box">
+            <button type="button" class="on">웨딩홀 찾기</button>
+            <button type="button" class="off">웨딩홀 무료섭외</button>
+          </div>
+          <form class="ser-panel">
+            <div class="fm-box">
+              <label>
+                <select>
+                  <option value="시/도를 선택해주세요.">시/도를 선택해주세요.</option>
+                  <option value="서울">서울</option>
+                  <option value="인천">인천</option>
+                  <option value="경기">경기</option>
+                </select>
+              </label>
+              <label>
+                <select>
+                  <option value="지역을 선택해주세요.">지역을 선택해주세요.</option>
+                  <option value="강남">강남</option>
+                  <option value="마포">마포</option>
+                  <option value="동작">동작</option>
+                  <option value="송파">송파</option>
+                </select>
+              </label>
+              <label>
+                <select>
+                  <option value="홀 형태를 선택해주세요.">홀 형태를 선택해주세요.</option>
+                  <option value="일반홀">일반홀</option>
+                  <option value="컨벤션">컨벤션</option>
+                  <option value="하우스">하우스</option>
+                </select>
+              </label>
+              <label class="grow">
+                <input type="text" placeholder="웨딩홀명을 입력해 주세요.">
+              </label>
+            </div>
+
+          </form>
+
+          <ul class="venue">
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set1.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 마포구 웨딩홀</p>
+                <h3>스칼라티움 상암월드컵점</h3>
+                <dl>
+                  <dt>뷔페</dt>
+                  <dd>20,000~30,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set2.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 동작구</p>
+                <h3>더리치컨벤션</h3>
+                <dl>
+                  <dt>뷔페</dt>
+                  <dd>20,000~40,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set3.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 송파구</p>
+                <h3>더 컨벤션</h3>
+                <dl>
+                  <dt>중식, 뷔페</dt>
+                  <dd>30,000~50,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set4.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 강남구</p>
+                <h3>마리아쥬 스퀘어</h3>
+                <dl>
+                  <dt>한정식, 양정식</dt>
+                  <dd>40,000~60,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set5.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 강남구</p>
+                <h3>하우스 본 오스티엄</h3>
+                <dl>
+                  <dt>한정식</dt>
+                  <dd>30,000~40,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set6.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 강남구</p>
+                <h3>애니버셔리</h3>
+                <dl>
+                  <dt>양정식</dt>
+                  <dd>50,000~60,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set7.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 강남구</p>
+                <h3>더라빌</h3>
+                <dl>
+                  <dt>양정식</dt>
+                  <dd>50,000~60,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set8.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 강남구</p>
+                <h3>컨벤션 벨라지움</h3>
+                <dl>
+                  <dt>양정식</dt>
+                  <dd>50,000~70,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set9.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 서초구</p>
+                <h3>엘루체 컨벤션</h3>
+                <dl>
+                  <dt>뷔페</dt>
+                  <dd>40,000~50,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set10.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 서초구</p>
+                <h3>KW 컨벤션센터</h3>
+                <dl>
+                  <dt>한정식</dt>
+                  <dd>40,000~50,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set11.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 서초구</p>
+                <h3>라비아 컨벤션</h3>
+                <dl>
+                  <dt>뷔페</dt>
+                  <dd>40,000~50,000원</dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <div class="ven-img">
+                  <img src="../image/sub/weddinghall/sub_set12.png" alt="스칼라티움 상암월드컵점">
+                </div>
+              </a>
+              <div class="ven-txt">
+                <p>서울 서초구</p>
+                <h3>엘타워</h3>
+                <dl>
+                  <dt>양정식</dt>
+                  <dd>50,000~60,000원</dd>
+                </dl>
+              </div>
+            </li>
+
+          </ul>
+
+          <ol class="paging">
+            <li class="first"><a href="#">첫페이지로 이동</a></li>
+            <li class="prev"><a href="#">이전페이지로 이동</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="next"><a href="#">다음페이지로 이동</a></li>
+            <li class="last"><a href="#">마지막페이지로 이동</a></li>
+          </ol>
+        </div>
+        
+      </div>
+
+      
+
+      
+
+    </div>
+    
+    <footer>
+      <ul class="f-top">
+        <li class="pink">
+          <a href="#">지역별 웨딩 업체</a>
+          <div class="dance"></div>
+        </li>
+        <li class="yell">
+          <a href="#">결혼 준비 Q&A</a>
+          <div class="mini"></div>
+        </li>
+      </ul>
+      <div class="f-box">
+        <div class="f-logo">
+          <img src="../../image/logo.png" alt="MAJOR WEDDING">
+        </div>
+        <div class="copy">
+          <p>MAJOREWEDDING 대표이사 김연란</p>
+          <p class="none">사업자 등록번호 211-10-35689</p>
+          <p>주소 : (06053) 서울특별시 강남구 학동로235 (강남구 논현동 90-6) 영일빌딩 4층</p>
+          <p>TEL : 02-6925-2043FAX : 02-6925-2044</p>
+          <p>Copyright MAJORWEDDING Co. Ltd. All rights reserved.</p>
+        </div>
+        <ul class="link">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">이메일 주소 무단수집 거부</a></li>
+        </ul>
+      </div>
+
+    </footer>
+
+  </div>
+</body>
+</html>
