@@ -222,7 +222,7 @@ h2{
 
   
 }
-@media (max-width : 360px){
+@media (max-width : 450px){
   #wedding .ser-panel .grow input{
     padding-left: 68px;
     width: 280px;
@@ -416,7 +416,7 @@ h2{
   
 }
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .intro h2{
     font-size: 4rem;
   }
